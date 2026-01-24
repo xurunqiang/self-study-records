@@ -466,17 +466,17 @@ def main():
     ap.add_argument("--seed", type=int, default=42)
     ap.add_argument("--valid_ratio", type=float, default=0.01)
 
-    ap.add_argument("--sample_size", type=int, default=100, help="小样本训练规模（从train里抽）")
+    ap.add_argument("--sample_size", type=int, default=10000, help="小样本训练规模（从train里抽）")
     ap.add_argument("--batch_size", type=int, default=8)
     ap.add_argument("--max_src_len", type=int, default=128)
     ap.add_argument("--max_tgt_len", type=int, default=256)
 
-    ap.add_argument("--max_vocab", type=int, default=5000)
+    ap.add_argument("--max_vocab", type=int, default=60000)
     ap.add_argument("--min_freq", type=int, default=2)
 
-    ap.add_argument("--d_model", type=int, default=256)
-    ap.add_argument("--n_heads", type=int, default=4)
-    ap.add_argument("--d_ff", type=int, default=128)
+    ap.add_argument("--d_model", type=int, default=512)
+    ap.add_argument("--n_heads", type=int, default=8)
+    ap.add_argument("--d_ff", type=int, default=1024)
     ap.add_argument("--dropout", type=float, default=0.1)
     ap.add_argument("--lr", type=float, default=3e-4)
 
